@@ -54,7 +54,7 @@ const AddTaskModal=({closemodal,setTodo})=>{
 
                 <input value={tittle} onInput={(e)=>setTittle(e.target.value)} type=" text " placeholder="Enter your ToDo tittle here.. " className="w-full p-2"/>
                 <textarea  value={description} onInput={(e)=>setDescription(e.target.value)} name="" id="" className=" w-full h-full max-h-full p-3 rounded-sm" placeholder="Add description...."></textarea>
-                <button onClick={addtodo} className="bg-[#63f591] py-2">Click to Add</button>
+                <button onClick={tittle?addtodo:closemodal} className="bg-[#63f591] py-2">Click to Add</button>
             </div>
 
         </div>
